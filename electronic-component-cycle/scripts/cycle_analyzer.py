@@ -63,7 +63,7 @@ class ComponentCycleAnalyzer:
             self.events.append(CycleEvent(
                 event_id=evt['id'],
                 time=evt['time'],
-                category=self._parse_category(evt.get('object', '')),
+                category=self._parse_category(evt.get('object') or ''),
                 event_type=evt['predicate'],
                 subject=evt['subject'],
                 description=evt['description'],
@@ -250,7 +250,7 @@ class ComponentCycleAnalyzer:
                 "features": ["头部厂商产能调整", "中低端产能退出", "需求稳定增长", "渠道囤货"],
                 "duration": "15个月上涨",
                 "price_range": "200%-500%",
-                "key_lesson": "不要相信"游资炒作"传言，核心是供给收缩"
+                "key_lesson": "不要相信“游资炒作”传言，核心是供给收缩"
             },
             {
                 "case_id": "C002",
