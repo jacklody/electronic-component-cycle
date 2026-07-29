@@ -1,106 +1,1180 @@
 {
   "metadata": {
     "name": "电子元器件周期时序知识图谱",
-    "version": "1.2",
+    "version": "1.3",
     "create_time": "2026-07-24",
-    "update_time": "2026-07-24",
-    "update_note": "新增3个标杆事件详细复盘：2018LCD面板、2020-2022MCU存储、2021被动元件",
+    "update_time": "2026-07-29",
+    "update_note": "自动工作流新增事件和案例",
     "time_range": "2016Q1-2026Q2",
     "description": "2016-2026电子行业涨价、缺货、产能波动事件时序知识图谱，含A/B/C三级可信度标记，严格时间因果校验"
   },
   "entities": [
-    {"id": "E001", "name": "LGD", "type": "厂商", "aliases": ["LG Display"]},
-    {"id": "E002", "name": "京东方", "type": "厂商", "aliases": ["BOE"]},
-    {"id": "E003", "name": "群创", "type": "厂商", "aliases": ["Innolux"]},
-    {"id": "E004", "name": "天马", "type": "厂商", "aliases": ["Tianma"]},
-    {"id": "E005", "name": "ST", "type": "厂商", "aliases": ["意法半导体", "STM"]},
-    {"id": "E006", "name": "TI", "type": "厂商", "aliases": ["德州仪器"]},
-    {"id": "E007", "name": "瑞萨", "type": "厂商", "aliases": ["Renesas"]},
-    {"id": "E008", "name": "英飞凌", "type": "厂商", "aliases": ["Infineon"]},
-    {"id": "E009", "name": "三星", "type": "厂商", "aliases": ["Samsung", "三星电子", "三星SDC", "三星电机"]},
-    {"id": "E010", "name": "SK海力士", "type": "厂商", "aliases": ["SK Hynix"]},
-    {"id": "E011", "name": "美光", "type": "厂商", "aliases": ["Micron"]},
-    {"id": "E012", "name": "村田", "type": "厂商", "aliases": ["Murata"]},
-    {"id": "E013", "name": "国巨", "type": "厂商", "aliases": ["Yageo"]},
-    {"id": "E014", "name": "华新科", "type": "厂商", "aliases": ["Walsin"]},
-    {"id": "E015", "name": "风华高科", "type": "厂商", "aliases": ["FengHua"]},
-    {"id": "E016", "name": "TDK", "type": "厂商", "aliases": []},
-    {"id": "E017", "name": "太阳诱电", "type": "厂商", "aliases": ["Taiyo Yuden"]},
-    {"id": "E018", "name": "恩智浦", "type": "厂商", "aliases": ["NXP"]},
-    {"id": "E019", "name": "士兰微", "type": "厂商", "aliases": ["Silan"]},
-    {"id": "E020", "name": "华润微", "type": "厂商", "aliases": ["CR Micro"]},
-    {"id": "E021", "name": "TFT-LCD面板", "type": "品类", "aliases": ["LCD面板", "面板", "Open Cell"]},
-    {"id": "E022", "name": "DRAM", "type": "品类", "aliases": ["内存"]},
-    {"id": "E023", "name": "NAND Flash", "type": "品类", "aliases": ["闪存", "存储", "eMMC"]},
-    {"id": "E024", "name": "HBM", "type": "品类", "aliases": ["高带宽内存"]},
-    {"id": "E025", "name": "通用MCU", "type": "品类", "aliases": ["单片机", "微控制器", "STM8"]},
-    {"id": "E026", "name": "车规MCU", "type": "品类", "aliases": ["汽车单片机"]},
-    {"id": "E027", "name": "功率器件", "type": "品类", "aliases": ["MOSFET", "IGBT", "功率半导体"]},
-    {"id": "E028", "name": "MLCC", "type": "品类", "aliases": ["片式多层陶瓷电容", "高容MLCC"]},
-    {"id": "E029", "name": "钽电容", "type": "品类", "aliases": ["Kemet"]},
-    {"id": "E030", "name": "片阻", "type": "品类", "aliases": ["贴片电阻", "芯片电阻"]},
-    {"id": "E031", "name": "成熟制程晶圆", "type": "要素", "aliases": ["8寸晶圆", "12寸成熟制程"]},
-    {"id": "E032", "name": "铜", "type": "要素", "aliases": ["原材料"]},
-    {"id": "E033", "name": "ITO靶材", "type": "要素", "aliases": ["ITO"]},
-    {"id": "E034", "name": "资本开支", "type": "要素", "aliases": ["Capex", "设备投资", "逆周期投资"]},
-    {"id": "E035", "name": "产线关停", "type": "要素", "aliases": ["减产", "产能收缩", "关厂"]},
-    {"id": "E036", "name": "产线新建", "type": "要素", "aliases": ["扩产", "新产能", "10.5代线"]},
-    {"id": "E037", "name": "下游需求", "type": "要素", "aliases": ["终端需求", "大尺寸化"]},
-    {"id": "E038", "name": "渠道备货", "type": "要素", "aliases": ["囤货", "库存", "牛鞭效应", "超量下单"]},
-    {"id": "E039", "name": "疫情", "type": "要素", "aliases": ["COVID-19", "新冠", "封国"]},
-    {"id": "E040", "name": "AI服务器", "type": "要素", "aliases": ["人工智能算力"]},
-    {"id": "E041", "name": "新能源汽车", "type": "要素", "aliases": ["电动车", "EV"]},
-    {"id": "E042", "name": "自然灾害", "type": "要素", "aliases": ["火灾", "暴雪", "地震", "停电"]},
-    {"id": "E043", "name": "市场情绪", "type": "要素", "aliases": ["传言", "预期", "涨价函"]},
-    {"id": "E044", "name": "铝电解电容", "type": "品类", "aliases": ["Rubycon", "红宝石"]},
-    {"id": "E045", "name": "铝箔/化工材料", "type": "要素", "aliases": ["原材料成本"]}
+    {
+      "id": "E001",
+      "name": "LGD",
+      "type": "厂商",
+      "aliases": [
+        "LG Display"
+      ]
+    },
+    {
+      "id": "E002",
+      "name": "京东方",
+      "type": "厂商",
+      "aliases": [
+        "BOE"
+      ]
+    },
+    {
+      "id": "E003",
+      "name": "群创",
+      "type": "厂商",
+      "aliases": [
+        "Innolux"
+      ]
+    },
+    {
+      "id": "E004",
+      "name": "天马",
+      "type": "厂商",
+      "aliases": [
+        "Tianma"
+      ]
+    },
+    {
+      "id": "E005",
+      "name": "ST",
+      "type": "厂商",
+      "aliases": [
+        "意法半导体",
+        "STM"
+      ]
+    },
+    {
+      "id": "E006",
+      "name": "TI",
+      "type": "厂商",
+      "aliases": [
+        "德州仪器"
+      ]
+    },
+    {
+      "id": "E007",
+      "name": "瑞萨",
+      "type": "厂商",
+      "aliases": [
+        "Renesas"
+      ]
+    },
+    {
+      "id": "E008",
+      "name": "英飞凌",
+      "type": "厂商",
+      "aliases": [
+        "Infineon"
+      ]
+    },
+    {
+      "id": "E009",
+      "name": "三星",
+      "type": "厂商",
+      "aliases": [
+        "Samsung",
+        "三星电子",
+        "三星SDC",
+        "三星电机"
+      ]
+    },
+    {
+      "id": "E010",
+      "name": "SK海力士",
+      "type": "厂商",
+      "aliases": [
+        "SK Hynix"
+      ]
+    },
+    {
+      "id": "E011",
+      "name": "美光",
+      "type": "厂商",
+      "aliases": [
+        "Micron"
+      ]
+    },
+    {
+      "id": "E012",
+      "name": "村田",
+      "type": "厂商",
+      "aliases": [
+        "Murata"
+      ]
+    },
+    {
+      "id": "E013",
+      "name": "国巨",
+      "type": "厂商",
+      "aliases": [
+        "Yageo"
+      ]
+    },
+    {
+      "id": "E014",
+      "name": "华新科",
+      "type": "厂商",
+      "aliases": [
+        "Walsin"
+      ]
+    },
+    {
+      "id": "E015",
+      "name": "风华高科",
+      "type": "厂商",
+      "aliases": [
+        "FengHua"
+      ]
+    },
+    {
+      "id": "E016",
+      "name": "TDK",
+      "type": "厂商",
+      "aliases": []
+    },
+    {
+      "id": "E017",
+      "name": "太阳诱电",
+      "type": "厂商",
+      "aliases": [
+        "Taiyo Yuden"
+      ]
+    },
+    {
+      "id": "E018",
+      "name": "恩智浦",
+      "type": "厂商",
+      "aliases": [
+        "NXP"
+      ]
+    },
+    {
+      "id": "E019",
+      "name": "士兰微",
+      "type": "厂商",
+      "aliases": [
+        "Silan"
+      ]
+    },
+    {
+      "id": "E020",
+      "name": "华润微",
+      "type": "厂商",
+      "aliases": [
+        "CR Micro"
+      ]
+    },
+    {
+      "id": "E021",
+      "name": "TFT-LCD面板",
+      "type": "品类",
+      "aliases": [
+        "LCD面板",
+        "面板",
+        "Open Cell"
+      ]
+    },
+    {
+      "id": "E022",
+      "name": "DRAM",
+      "type": "品类",
+      "aliases": [
+        "内存"
+      ]
+    },
+    {
+      "id": "E023",
+      "name": "NAND Flash",
+      "type": "品类",
+      "aliases": [
+        "闪存",
+        "存储",
+        "eMMC"
+      ]
+    },
+    {
+      "id": "E024",
+      "name": "HBM",
+      "type": "品类",
+      "aliases": [
+        "高带宽内存"
+      ]
+    },
+    {
+      "id": "E025",
+      "name": "通用MCU",
+      "type": "品类",
+      "aliases": [
+        "单片机",
+        "微控制器",
+        "STM8"
+      ]
+    },
+    {
+      "id": "E026",
+      "name": "车规MCU",
+      "type": "品类",
+      "aliases": [
+        "汽车单片机"
+      ]
+    },
+    {
+      "id": "E027",
+      "name": "功率器件",
+      "type": "品类",
+      "aliases": [
+        "MOSFET",
+        "IGBT",
+        "功率半导体"
+      ]
+    },
+    {
+      "id": "E028",
+      "name": "MLCC",
+      "type": "品类",
+      "aliases": [
+        "片式多层陶瓷电容",
+        "高容MLCC"
+      ]
+    },
+    {
+      "id": "E029",
+      "name": "钽电容",
+      "type": "品类",
+      "aliases": [
+        "Kemet"
+      ]
+    },
+    {
+      "id": "E030",
+      "name": "片阻",
+      "type": "品类",
+      "aliases": [
+        "贴片电阻",
+        "芯片电阻"
+      ]
+    },
+    {
+      "id": "E031",
+      "name": "成熟制程晶圆",
+      "type": "要素",
+      "aliases": [
+        "8寸晶圆",
+        "12寸成熟制程"
+      ]
+    },
+    {
+      "id": "E032",
+      "name": "铜",
+      "type": "要素",
+      "aliases": [
+        "原材料"
+      ]
+    },
+    {
+      "id": "E033",
+      "name": "ITO靶材",
+      "type": "要素",
+      "aliases": [
+        "ITO"
+      ]
+    },
+    {
+      "id": "E034",
+      "name": "资本开支",
+      "type": "要素",
+      "aliases": [
+        "Capex",
+        "设备投资",
+        "逆周期投资"
+      ]
+    },
+    {
+      "id": "E035",
+      "name": "产线关停",
+      "type": "要素",
+      "aliases": [
+        "减产",
+        "产能收缩",
+        "关厂"
+      ]
+    },
+    {
+      "id": "E036",
+      "name": "产线新建",
+      "type": "要素",
+      "aliases": [
+        "扩产",
+        "新产能",
+        "10.5代线"
+      ]
+    },
+    {
+      "id": "E037",
+      "name": "下游需求",
+      "type": "要素",
+      "aliases": [
+        "终端需求",
+        "大尺寸化"
+      ]
+    },
+    {
+      "id": "E038",
+      "name": "渠道备货",
+      "type": "要素",
+      "aliases": [
+        "囤货",
+        "库存",
+        "牛鞭效应",
+        "超量下单"
+      ]
+    },
+    {
+      "id": "E039",
+      "name": "疫情",
+      "type": "要素",
+      "aliases": [
+        "COVID-19",
+        "新冠",
+        "封国"
+      ]
+    },
+    {
+      "id": "E040",
+      "name": "AI服务器",
+      "type": "要素",
+      "aliases": [
+        "人工智能算力"
+      ]
+    },
+    {
+      "id": "E041",
+      "name": "新能源汽车",
+      "type": "要素",
+      "aliases": [
+        "电动车",
+        "EV"
+      ]
+    },
+    {
+      "id": "E042",
+      "name": "自然灾害",
+      "type": "要素",
+      "aliases": [
+        "火灾",
+        "暴雪",
+        "地震",
+        "停电"
+      ]
+    },
+    {
+      "id": "E043",
+      "name": "市场情绪",
+      "type": "要素",
+      "aliases": [
+        "传言",
+        "预期",
+        "涨价函"
+      ]
+    },
+    {
+      "id": "E044",
+      "name": "铝电解电容",
+      "type": "品类",
+      "aliases": [
+        "Rubycon",
+        "红宝石"
+      ]
+    },
+    {
+      "id": "E045",
+      "name": "铝箔/化工材料",
+      "type": "要素",
+      "aliases": [
+        "原材料成本"
+      ]
+    }
   ],
   "events": [
-    {"id": "EVT001", "time": "2015Q4", "subject": "E021", "predicate": "价格底部", "object": null, "description": "LCD面板行业底部，全行业亏损，32寸Open Cell价格37美元", "confidence": "A", "source": "Omdia、雪球复盘", "price_data": {"32寸": 37, "unit": "美元", "change_pct": 0}},
-    {"id": "EVT002", "time": "2016Q2", "subject": "E009", "predicate": "关停产线", "object": "E021", "description": "三星SDC宣布关闭L7-1 G7 LCD产线转产OLED，单月减少120K大尺寸基板产能", "confidence": "A", "source": "财新周刊、中华液晶网", "capacity_impact_pct": 4},
-    {"id": "EVT003", "time": "2016Q2", "subject": "E042", "predicate": "生产事故", "object": "E003", "description": "台湾206地震，群创生产线受损，电视面板出货量大幅减少", "confidence": "A", "source": "香港商报", "capacity_impact_pct": 3},
-    {"id": "EVT004", "time": "2016Q3", "subject": "E021", "predicate": "价格上涨", "object": null, "description": "LCD面板价格启动上涨，32寸从37美元开始上行", "confidence": "A", "source": "Omdia", "price_data": {"32寸": 45, "unit": "美元", "change_pct": 22}},
-    {"id": "EVT005", "time": "2016Q4", "subject": "E009", "predicate": "产能调整", "object": "E021", "description": "鸿海收购夏普后，减少对三星电视的面板出货", "confidence": "A", "source": "产业复盘"},
-    {"id": "EVT006", "time": "2017Q4", "subject": "E021", "predicate": "价格见顶", "object": null, "description": "LCD面板价格见顶，32寸76美元，55寸210美元，涨幅105%", "confidence": "A", "source": "Omdia", "price_data": {"32寸": 76, "55寸": 210, "unit": "美元", "change_pct": 105}},
-    {"id": "EVT007", "time": "2018Q1", "subject": "E002", "predicate": "新产能投产", "object": "E021", "description": "京东方合肥10.5代线提前投产，大尺寸面板产能开始释放", "confidence": "A", "source": "中国经济网"},
-    {"id": "EVT008", "time": "2018Q3", "subject": "E021", "predicate": "价格下跌", "object": null, "description": "LCD面板价格开始下跌，进入18个月单边下行周期", "confidence": "A", "source": "东莞雷云光电"},
-    {"id": "EVT009", "time": "2019Q4", "subject": "E021", "predicate": "价格触底", "object": null, "description": "LCD面板价格触底，32寸跌回32美元，跌幅58%", "confidence": "A", "source": "Omdia", "price_data": {"32寸": 32, "unit": "美元", "drawdown_pct": 58}},
-    
-    {"id": "EVT010", "time": "2020Q1", "subject": "E039", "predicate": "需求冲击", "object": null, "description": "新冠疫情爆发，车企大幅砍单20%-30%", "confidence": "A", "source": "36氪", "demand_cut_pct": 30},
-    {"id": "EVT011", "time": "2020Q2", "subject": "E039", "predicate": "需求增长", "object": null, "description": "居家办公需求爆发，PC/平板/服务器订单增长30%+", "confidence": "A", "source": "电子发烧友网", "demand_growth_pct": 30},
-    {"id": "EVT012", "time": "2020Q3", "subject": "E041", "predicate": "需求复苏", "object": null, "description": "汽车需求V型复苏，但车规产能已被消费电子占用", "confidence": "A", "source": "芝加哥联储报告"},
-    {"id": "EVT013", "time": "2020Q12", "subject": "E025,E026", "predicate": "发布涨价函", "object": null, "description": "ST、瑞萨、NXP车规/通用MCU涨价10%-20%，涨价正式启动", "confidence": "A", "source": "腾讯新闻"},
-    {"id": "EVT014", "time": "2021Q1", "subject": "E042", "predicate": "产能中断", "object": null, "description": "德州暴雪导致三星/恩智浦/英飞凌奥斯汀厂停产1个月", "confidence": "A", "source": "新华网", "capacity_impact_pct": 5},
-    {"id": "EVT015", "time": "2021Q1", "subject": "E007", "predicate": "生产事故", "object": "E026", "description": "瑞萨那珂工厂火灾，车规MCU产能损失17%，恢复用了4个月", "confidence": "A", "source": "瑞萨官方公告", "capacity_impact_pct": 17},
-    {"id": "EVT016", "time": "2021Q2-Q4", "subject": "E025,E026,E022", "predicate": "缺货涨价", "object": null, "description": "MCU缺货高峰，STM8S003从2.5元涨至10元；车规8位MCU从1美元涨至7-10美元；DRAM涨112%", "confidence": "A", "source": "电子工程专辑、集微网", "price_data": {"STM8S003": {"start": 2.5, "peak": 10, "unit": "元", "change_pct": 300}, "车规8位MCU": {"start": 1, "peak": 10, "unit": "美元", "change_pct": 900}, "DRAM_DDR4": {"start": 3.2, "peak": 6.8, "unit": "美元", "change_pct": 112}}, "lead_time_weeks": 52},
-    {"id": "EVT017", "time": "2021Q3", "subject": "E039", "predicate": "产能中断", "object": null, "description": "马来西亚封国，封测产能受阻约1个季度", "confidence": "A", "source": "电子发烧友网"},
-    {"id": "EVT018", "time": "2022Q2", "subject": "E037", "predicate": "需求下滑", "object": null, "description": "消费电子需求见顶，PC/手机出货量同比下滑10%+，缺货开始缓解", "confidence": "A", "source": "Counterpoint", "demand_decline_pct": 10},
-    {"id": "EVT019", "time": "2022Q4", "subject": "E025,E026", "predicate": "价格下跌", "object": null, "description": "MCU价格开始暴跌，通用MCU跌回甚至低于2019年水平", "confidence": "A", "source": "产业复盘"},
-    
-    {"id": "EVT020", "time": "2020Q4", "subject": "E032,E045", "predicate": "原材料涨价", "object": null, "description": "铜、铝箔、化工料、能源、物流成本开始上涨", "confidence": "A", "source": "中国电子元件协会"},
-    {"id": "EVT021", "time": "2021Q1", "subject": "E012", "predicate": "交期拉长", "object": "E028", "description": "村田MLCC交期拉长到16周以上，部分型号交期112-180天", "confidence": "A", "source": "电子技术应用", "lead_time_weeks": 24},
-    {"id": "EVT022", "time": "2021Q2", "subject": "E013", "predicate": "发布涨价函", "object": "E030", "description": "国巨3月1日起片式电阻涨价15%-25%", "confidence": "A", "source": "腾讯新闻", "price_change_pct": 20},
-    {"id": "EVT023", "time": "2021Q2", "subject": "E009,E016", "predicate": "交期拉长", "object": "E028", "description": "三星电机、TDK高容MLCC交期延长至20-28周", "confidence": "A", "source": "A2 Global", "lead_time_weeks": 28},
-    {"id": "EVT024", "time": "2021Q3", "subject": "E014", "predicate": "发布涨价函", "object": "E028", "description": "华新科MLCC涨价30%-40%", "confidence": "A", "source": "中国电子元件协会", "price_change_pct": 35},
-    {"id": "EVT025", "time": "2021Q3", "subject": "E013", "predicate": "发布涨价函", "object": "E028,E030", "description": "国巨第二波涨价，4月1日起MLCC/片阻涨10%-20%", "confidence": "A", "source": "新浪财经", "price_change_pct": 15},
-    {"id": "EVT026", "time": "2021Q2", "subject": "E029", "predicate": "交期拉长", "object": null, "description": "Kemet钽电容交期40周以上，B/D尺寸再延长12-14周", "confidence": "A", "source": "A2 Global", "lead_time_weeks": 40},
-    {"id": "EVT027", "time": "2021Q2", "subject": "E044", "predicate": "发布涨价函", "object": null, "description": "Rubycon红宝石铝电解电容3月1日起涨价", "confidence": "A", "source": "电子工程专辑"},
-    {"id": "EVT028", "time": "2021Q2", "subject": "E013", "predicate": "发布涨价函", "object": "E029,E030", "description": "国巨第三波涨价，6月1日起对一线大厂涨10%，钽电容涨约10%", "confidence": "A", "source": "芯智讯", "price_change_pct": 10},
-    {"id": "EVT029", "time": "2021Q4", "subject": "E028,E029,E030", "predicate": "价格见顶", "object": null, "description": "被动元件价格见顶，常规MLCC涨10%-30%，车规高容MLCC现货翻倍", "confidence": "A", "source": "三轮被动元件复盘", "price_data": {"常规MLCC": {"change_pct": 20}, "车规高容MLCC": {"change_pct": 100}, "片阻": {"change_pct": 20}, "钽电容": {"change_pct": 15}}},
-    {"id": "EVT030", "time": "2022Q1", "subject": "E028,E029,E030", "predicate": "价格下跌", "object": null, "description": "需求转弱，被动元件价格开始回落", "confidence": "A", "source": "产业复盘"},
-    
-    {"id": "EVT031", "time": "2023-2024", "subject": "E027,E025", "predicate": "产能收缩", "object": null, "description": "行业寒冬，功率/模拟厂商产能缩减20%-30%，资本开支大降", "confidence": "A", "source": "中华网产业报道"},
-    {"id": "EVT032", "time": "2025Q1", "subject": "E040", "predicate": "需求爆发", "object": null, "description": "AI服务器需求爆发，HBM、高功率器件需求倍增", "confidence": "A", "source": "TrendForce"},
-    {"id": "EVT033", "time": "2026Q1", "subject": "E022,E024", "predicate": "价格上涨", "object": null, "description": "DRAM合约价环比涨90%-95%，HBM价格翻倍", "confidence": "A", "source": "Counterpoint"},
-    {"id": "EVT034", "time": "2026Q1-Q2", "subject": "E006,E020,E019", "predicate": "发布涨价函", "object": "E027", "description": "TI四度提价，华润微/士兰微等功率器件涨10%-15%", "confidence": "A", "source": "各厂商官方涨价通知"},
-    {"id": "EVT035", "time": "2026Q2", "subject": "E028", "predicate": "价格上涨", "object": null, "description": "AI用高容MLCC涨50%-60%，部分型号翻倍，交期4个月", "confidence": "A", "source": "36氪"},
-    
-    {"id": "EVT036", "time": "2018Q3", "subject": "E043", "predicate": "市场传言", "object": null, "description": "市场传言\"游资爆炒MLCC\"、\"渠道囤货居奇\"", "confidence": "B", "source": "当时媒体报道、代理商言论"},
-    {"id": "EVT037", "time": "2020Q3", "subject": "E043", "predicate": "市场传言", "object": null, "description": "市场传言\"美国制裁华为导致全行业抢产能\"", "confidence": "B", "source": "当时外媒报道、渠道言论"},
-    {"id": "EVT038", "time": "2021全年", "subject": "E043", "predicate": "市场传言", "object": null, "description": "市场传言\"芯片缺货将持续3-5年\"", "confidence": "C", "source": "自媒体、股市分析师"},
-    {"id": "EVT039", "time": "2026全年", "subject": "E043", "predicate": "市场传言", "object": null, "description": "市场传言\"AI将导致芯片永久通胀，再也不会降价\"", "confidence": "C", "source": "自媒体乐观言论"},
-    {"id": "EVT040", "time": "2016Q4", "subject": "E043", "predicate": "市场传言", "object": null, "description": "市场传言\"人民币汇率贬值/铜价上涨导致面板涨价\"", "confidence": "B", "source": "当时媒体报道"},
-    {"id": "EVT041", "time": "2021全年", "subject": "E043", "predicate": "市场传言", "object": null, "description": "市场传言\"国巨又要像2018年一样炒MLCC，涨3-5倍\"", "confidence": "C", "source": "自媒体、股市分析师"}
+    {
+      "id": "EVT001",
+      "time": "2015Q4",
+      "subject": "E021",
+      "predicate": "价格底部",
+      "object": null,
+      "description": "LCD面板行业底部，全行业亏损，32寸Open Cell价格37美元",
+      "confidence": "A",
+      "source": "Omdia、雪球复盘",
+      "price_data": {
+        "32寸": 37,
+        "unit": "美元",
+        "change_pct": 0
+      }
+    },
+    {
+      "id": "EVT002",
+      "time": "2016Q2",
+      "subject": "E009",
+      "predicate": "关停产线",
+      "object": "E021",
+      "description": "三星SDC宣布关闭L7-1 G7 LCD产线转产OLED，单月减少120K大尺寸基板产能",
+      "confidence": "A",
+      "source": "财新周刊、中华液晶网",
+      "capacity_impact_pct": 4
+    },
+    {
+      "id": "EVT003",
+      "time": "2016Q2",
+      "subject": "E042",
+      "predicate": "生产事故",
+      "object": "E003",
+      "description": "台湾206地震，群创生产线受损，电视面板出货量大幅减少",
+      "confidence": "A",
+      "source": "香港商报",
+      "capacity_impact_pct": 3
+    },
+    {
+      "id": "EVT004",
+      "time": "2016Q3",
+      "subject": "E021",
+      "predicate": "价格上涨",
+      "object": null,
+      "description": "LCD面板价格启动上涨，32寸从37美元开始上行",
+      "confidence": "A",
+      "source": "Omdia",
+      "price_data": {
+        "32寸": 45,
+        "unit": "美元",
+        "change_pct": 22
+      }
+    },
+    {
+      "id": "EVT005",
+      "time": "2016Q4",
+      "subject": "E009",
+      "predicate": "产能调整",
+      "object": "E021",
+      "description": "鸿海收购夏普后，减少对三星电视的面板出货",
+      "confidence": "A",
+      "source": "产业复盘"
+    },
+    {
+      "id": "EVT006",
+      "time": "2017Q4",
+      "subject": "E021",
+      "predicate": "价格见顶",
+      "object": null,
+      "description": "LCD面板价格见顶，32寸76美元，55寸210美元，涨幅105%",
+      "confidence": "A",
+      "source": "Omdia",
+      "price_data": {
+        "32寸": 76,
+        "55寸": 210,
+        "unit": "美元",
+        "change_pct": 105
+      }
+    },
+    {
+      "id": "EVT007",
+      "time": "2018Q1",
+      "subject": "E002",
+      "predicate": "新产能投产",
+      "object": "E021",
+      "description": "京东方合肥10.5代线提前投产，大尺寸面板产能开始释放",
+      "confidence": "A",
+      "source": "中国经济网"
+    },
+    {
+      "id": "EVT008",
+      "time": "2018Q3",
+      "subject": "E021",
+      "predicate": "价格下跌",
+      "object": null,
+      "description": "LCD面板价格开始下跌，进入18个月单边下行周期",
+      "confidence": "A",
+      "source": "东莞雷云光电"
+    },
+    {
+      "id": "EVT009",
+      "time": "2019Q4",
+      "subject": "E021",
+      "predicate": "价格触底",
+      "object": null,
+      "description": "LCD面板价格触底，32寸跌回32美元，跌幅58%",
+      "confidence": "A",
+      "source": "Omdia",
+      "price_data": {
+        "32寸": 32,
+        "unit": "美元",
+        "drawdown_pct": 58
+      }
+    },
+    {
+      "id": "EVT010",
+      "time": "2020Q1",
+      "subject": "E039",
+      "predicate": "需求冲击",
+      "object": null,
+      "description": "新冠疫情爆发，车企大幅砍单20%-30%",
+      "confidence": "A",
+      "source": "36氪",
+      "demand_cut_pct": 30
+    },
+    {
+      "id": "EVT011",
+      "time": "2020Q2",
+      "subject": "E039",
+      "predicate": "需求增长",
+      "object": null,
+      "description": "居家办公需求爆发，PC/平板/服务器订单增长30%+",
+      "confidence": "A",
+      "source": "电子发烧友网",
+      "demand_growth_pct": 30
+    },
+    {
+      "id": "EVT012",
+      "time": "2020Q3",
+      "subject": "E041",
+      "predicate": "需求复苏",
+      "object": null,
+      "description": "汽车需求V型复苏，但车规产能已被消费电子占用",
+      "confidence": "A",
+      "source": "芝加哥联储报告"
+    },
+    {
+      "id": "EVT013",
+      "time": "2020Q12",
+      "subject": "E025,E026",
+      "predicate": "发布涨价函",
+      "object": null,
+      "description": "ST、瑞萨、NXP车规/通用MCU涨价10%-20%，涨价正式启动",
+      "confidence": "A",
+      "source": "腾讯新闻"
+    },
+    {
+      "id": "EVT014",
+      "time": "2021Q1",
+      "subject": "E042",
+      "predicate": "产能中断",
+      "object": null,
+      "description": "德州暴雪导致三星/恩智浦/英飞凌奥斯汀厂停产1个月",
+      "confidence": "A",
+      "source": "新华网",
+      "capacity_impact_pct": 5
+    },
+    {
+      "id": "EVT015",
+      "time": "2021Q1",
+      "subject": "E007",
+      "predicate": "生产事故",
+      "object": "E026",
+      "description": "瑞萨那珂工厂火灾，车规MCU产能损失17%，恢复用了4个月",
+      "confidence": "A",
+      "source": "瑞萨官方公告",
+      "capacity_impact_pct": 17
+    },
+    {
+      "id": "EVT016",
+      "time": "2021Q2-Q4",
+      "subject": "E025,E026,E022",
+      "predicate": "缺货涨价",
+      "object": null,
+      "description": "MCU缺货高峰，STM8S003从2.5元涨至10元；车规8位MCU从1美元涨至7-10美元；DRAM涨112%",
+      "confidence": "A",
+      "source": "电子工程专辑、集微网",
+      "price_data": {
+        "STM8S003": {
+          "start": 2.5,
+          "peak": 10,
+          "unit": "元",
+          "change_pct": 300
+        },
+        "车规8位MCU": {
+          "start": 1,
+          "peak": 10,
+          "unit": "美元",
+          "change_pct": 900
+        },
+        "DRAM_DDR4": {
+          "start": 3.2,
+          "peak": 6.8,
+          "unit": "美元",
+          "change_pct": 112
+        }
+      },
+      "lead_time_weeks": 52
+    },
+    {
+      "id": "EVT017",
+      "time": "2021Q3",
+      "subject": "E039",
+      "predicate": "产能中断",
+      "object": null,
+      "description": "马来西亚封国，封测产能受阻约1个季度",
+      "confidence": "A",
+      "source": "电子发烧友网"
+    },
+    {
+      "id": "EVT018",
+      "time": "2022Q2",
+      "subject": "E037",
+      "predicate": "需求下滑",
+      "object": null,
+      "description": "消费电子需求见顶，PC/手机出货量同比下滑10%+，缺货开始缓解",
+      "confidence": "A",
+      "source": "Counterpoint",
+      "demand_decline_pct": 10
+    },
+    {
+      "id": "EVT019",
+      "time": "2022Q4",
+      "subject": "E025,E026",
+      "predicate": "价格下跌",
+      "object": null,
+      "description": "MCU价格开始暴跌，通用MCU跌回甚至低于2019年水平",
+      "confidence": "A",
+      "source": "产业复盘"
+    },
+    {
+      "id": "EVT020",
+      "time": "2020Q4",
+      "subject": "E032,E045",
+      "predicate": "原材料涨价",
+      "object": null,
+      "description": "铜、铝箔、化工料、能源、物流成本开始上涨",
+      "confidence": "A",
+      "source": "中国电子元件协会"
+    },
+    {
+      "id": "EVT021",
+      "time": "2021Q1",
+      "subject": "E012",
+      "predicate": "交期拉长",
+      "object": "E028",
+      "description": "村田MLCC交期拉长到16周以上，部分型号交期112-180天",
+      "confidence": "A",
+      "source": "电子技术应用",
+      "lead_time_weeks": 24
+    },
+    {
+      "id": "EVT022",
+      "time": "2021Q2",
+      "subject": "E013",
+      "predicate": "发布涨价函",
+      "object": "E030",
+      "description": "国巨3月1日起片式电阻涨价15%-25%",
+      "confidence": "A",
+      "source": "腾讯新闻",
+      "price_change_pct": 20
+    },
+    {
+      "id": "EVT023",
+      "time": "2021Q2",
+      "subject": "E009,E016",
+      "predicate": "交期拉长",
+      "object": "E028",
+      "description": "三星电机、TDK高容MLCC交期延长至20-28周",
+      "confidence": "A",
+      "source": "A2 Global",
+      "lead_time_weeks": 28
+    },
+    {
+      "id": "EVT024",
+      "time": "2021Q3",
+      "subject": "E014",
+      "predicate": "发布涨价函",
+      "object": "E028",
+      "description": "华新科MLCC涨价30%-40%",
+      "confidence": "A",
+      "source": "中国电子元件协会",
+      "price_change_pct": 35
+    },
+    {
+      "id": "EVT025",
+      "time": "2021Q3",
+      "subject": "E013",
+      "predicate": "发布涨价函",
+      "object": "E028,E030",
+      "description": "国巨第二波涨价，4月1日起MLCC/片阻涨10%-20%",
+      "confidence": "A",
+      "source": "新浪财经",
+      "price_change_pct": 15
+    },
+    {
+      "id": "EVT026",
+      "time": "2021Q2",
+      "subject": "E029",
+      "predicate": "交期拉长",
+      "object": null,
+      "description": "Kemet钽电容交期40周以上，B/D尺寸再延长12-14周",
+      "confidence": "A",
+      "source": "A2 Global",
+      "lead_time_weeks": 40
+    },
+    {
+      "id": "EVT027",
+      "time": "2021Q2",
+      "subject": "E044",
+      "predicate": "发布涨价函",
+      "object": null,
+      "description": "Rubycon红宝石铝电解电容3月1日起涨价",
+      "confidence": "A",
+      "source": "电子工程专辑"
+    },
+    {
+      "id": "EVT028",
+      "time": "2021Q2",
+      "subject": "E013",
+      "predicate": "发布涨价函",
+      "object": "E029,E030",
+      "description": "国巨第三波涨价，6月1日起对一线大厂涨10%，钽电容涨约10%",
+      "confidence": "A",
+      "source": "芯智讯",
+      "price_change_pct": 10
+    },
+    {
+      "id": "EVT029",
+      "time": "2021Q4",
+      "subject": "E028,E029,E030",
+      "predicate": "价格见顶",
+      "object": null,
+      "description": "被动元件价格见顶，常规MLCC涨10%-30%，车规高容MLCC现货翻倍",
+      "confidence": "A",
+      "source": "三轮被动元件复盘",
+      "price_data": {
+        "常规MLCC": {
+          "change_pct": 20
+        },
+        "车规高容MLCC": {
+          "change_pct": 100
+        },
+        "片阻": {
+          "change_pct": 20
+        },
+        "钽电容": {
+          "change_pct": 15
+        }
+      }
+    },
+    {
+      "id": "EVT030",
+      "time": "2022Q1",
+      "subject": "E028,E029,E030",
+      "predicate": "价格下跌",
+      "object": null,
+      "description": "需求转弱，被动元件价格开始回落",
+      "confidence": "A",
+      "source": "产业复盘"
+    },
+    {
+      "id": "EVT031",
+      "time": "2023-2024",
+      "subject": "E027,E025",
+      "predicate": "产能收缩",
+      "object": null,
+      "description": "行业寒冬，功率/模拟厂商产能缩减20%-30%，资本开支大降",
+      "confidence": "A",
+      "source": "中华网产业报道"
+    },
+    {
+      "id": "EVT032",
+      "time": "2025Q1",
+      "subject": "E040",
+      "predicate": "需求爆发",
+      "object": null,
+      "description": "AI服务器需求爆发，HBM、高功率器件需求倍增",
+      "confidence": "A",
+      "source": "TrendForce"
+    },
+    {
+      "id": "EVT033",
+      "time": "2026Q1",
+      "subject": "E022,E024",
+      "predicate": "价格上涨",
+      "object": null,
+      "description": "DRAM合约价环比涨90%-95%，HBM价格翻倍",
+      "confidence": "A",
+      "source": "Counterpoint"
+    },
+    {
+      "id": "EVT034",
+      "time": "2026Q1-Q2",
+      "subject": "E006,E020,E019",
+      "predicate": "发布涨价函",
+      "object": "E027",
+      "description": "TI四度提价，华润微/士兰微等功率器件涨10%-15%",
+      "confidence": "A",
+      "source": "各厂商官方涨价通知"
+    },
+    {
+      "id": "EVT035",
+      "time": "2026Q2",
+      "subject": "E028",
+      "predicate": "价格上涨",
+      "object": null,
+      "description": "AI用高容MLCC涨50%-60%，部分型号翻倍，交期4个月",
+      "confidence": "A",
+      "source": "36氪"
+    },
+    {
+      "id": "EVT036",
+      "time": "2018Q3",
+      "subject": "E043",
+      "predicate": "市场传言",
+      "object": null,
+      "description": "市场传言\"游资爆炒MLCC\"、\"渠道囤货居奇\"",
+      "confidence": "B",
+      "source": "当时媒体报道、代理商言论"
+    },
+    {
+      "id": "EVT037",
+      "time": "2020Q3",
+      "subject": "E043",
+      "predicate": "市场传言",
+      "object": null,
+      "description": "市场传言\"美国制裁华为导致全行业抢产能\"",
+      "confidence": "B",
+      "source": "当时外媒报道、渠道言论"
+    },
+    {
+      "id": "EVT038",
+      "time": "2021全年",
+      "subject": "E043",
+      "predicate": "市场传言",
+      "object": null,
+      "description": "市场传言\"芯片缺货将持续3-5年\"",
+      "confidence": "C",
+      "source": "自媒体、股市分析师"
+    },
+    {
+      "id": "EVT039",
+      "time": "2026全年",
+      "subject": "E043",
+      "predicate": "市场传言",
+      "object": null,
+      "description": "市场传言\"AI将导致芯片永久通胀，再也不会降价\"",
+      "confidence": "C",
+      "source": "自媒体乐观言论"
+    },
+    {
+      "id": "EVT040",
+      "time": "2016Q4",
+      "subject": "E043",
+      "predicate": "市场传言",
+      "object": null,
+      "description": "市场传言\"人民币汇率贬值/铜价上涨导致面板涨价\"",
+      "confidence": "B",
+      "source": "当时媒体报道"
+    },
+    {
+      "id": "EVT041",
+      "time": "2021全年",
+      "subject": "E043",
+      "predicate": "市场传言",
+      "object": null,
+      "description": "市场传言\"国巨又要像2018年一样炒MLCC，涨3-5倍\"",
+      "confidence": "C",
+      "source": "自媒体、股市分析师"
+    },
+    {
+      "id": "EVT042",
+      "time": "2026Q3",
+      "subject": "DRAM",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "2026年7月4日瑞银发布报告，将第三季度DDR合约价格环比涨幅从17%上调至32%，三星电子已正式通知客户三季度DRAM均价上调20%。AI服务器对DRAM需求量是传统服务器的8-10倍，三大原厂将超70%的先进产能转向HBM，导致通用DRAM产能严重挤兑，价格持续飙升。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT043",
+      "time": "2026Q1",
+      "subject": "DRAM",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "三星电子与下游客户展开第三季度DRAM价格谈判，目标将通用DRAM平均售价较上季度提高20%。2026年第一季度DRAM均价暴涨约90%，第二季度涨幅在50%至60%之间。AI推理工作负载放量，LPDDR被越来越多AI芯片选为片外缓存。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT044",
+      "time": "unknown",
+      "subject": "HBM",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "SK海力士以14.2%得票率蝉联韩国大学生最想就职企业榜首。HBM技术改写存储产业价值分配，SK海力士控制全球HBM市场约56%份额。三大原厂已将约70%的新增产能向HBM倾斜，HBM产能缺口仍达50%-60%。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT045",
+      "time": "2028",
+      "subject": "HBM",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "美光科技启动日本广岛工厂扩建工程，斥资约93亿美元布局HBM产线，预计2028年出货。三巨头新增产能向高毛利、高附加值的AI产线倾斜，消费级DRAM的产能扩张极为有限。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT046",
+      "time": "unknown",
+      "subject": "MLCC",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "AI服务器生产导致通用MLCC出现供应短缺和价格上涨，村田、三星电机、太阳诱电三大厂商月出货量创五年新高。通用MLCC库存已降至30天以下，分销商提价20-25%，现货市场价格飙升至之前的2-3倍。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT047",
+      "time": "unknown",
+      "subject": "MLCC",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "三星电机已向全球客户下发调价通知，决定自8月1日起旗下全线MLCC产品出货价格在现有定价基础上统一上调30%。太阳诱电也已向客户出具正式涨价函，确定自9月1日起执行新的出货价格。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT048",
+      "time": "unknown",
+      "subject": "MLCC",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "被动元器件大厂国巨向客户端通知价格调整，自7月1日开始调涨全系列电容产品价格，涉及的产品覆盖国巨约50%营收，且涨价对象首次纳入直接客户(EMS/OEM)。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT049",
+      "time": "unknown",
+      "subject": "功率器件",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "7月起全球超20家功率半导体企业集中开启年内第二轮涨价，幅度10%-25%，覆盖硅基MOSFET/IGBT、SiC、GaN全品类。AI数据中心功率密度跃升驱动，单台AI服务器功率半导体使用量是传统服务器的3倍以上。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT050",
+      "time": "unknown",
+      "subject": "功率器件",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "英飞凌7月1日启动年内第二次提价，AI服务器电源芯片、车规级IGBT、高压MOSFET涨幅区间10%-20%。AI服务器电源管理芯片订单暴增，直接吞噬了原本分配给车规级功率半导体的8英寸晶圆产能，主流功率器件交期从8周拉长至30周以上。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT051",
+      "time": "unknown",
+      "subject": "功率器件",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "士兰微6月29日发布调价函，自7月1日起全产品线价格上调15%起。华润微、扬杰科技、新洁能等国内功率半导体厂商全线跟进。涨价源于上游原材料、晶圆制造、封测环节成本持续走高，叠加AI、新能源等需求爆发。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT052",
+      "time": "unknown",
+      "subject": "通用MCU",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "AI需求持续吸纳半导体产能，成熟制程从晶圆制造至封装测试都有供应紧张情况，MCU厂商交期约为六至八个月。AI相关芯片获利较高，晶圆及封装资源优先移往AI服务器，压缩一般消费性IC可取得的供给量。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT053",
+      "time": "unknown",
+      "subject": "通用MCU",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "中微半导宣布对MCU产品全线涨价15%至50，明确提及调价核心原因是代工交期加长、部分产品缺货严重。全球8英寸晶圆产能向功率器件、逻辑芯片倾斜，MCU专用晶圆产能占比持续下降。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT054",
+      "time": "2026Q3",
+      "subject": "车规MCU",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "意法半导体6月底落地调价，英飞凌与TI计划三季度跟进。辉芒微电子已上调8位MCU产品价格，涨幅5%。MCU市场逐步复苏，价格逐步反弹，2026年行业景气度向好。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描",
+      "price_change_pct": 5
+    },
+    {
+      "id": "EVT055",
+      "time": "unknown",
+      "subject": "LCD面板",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "群智咨询发文指出，七月电视面板市场供应增长强于需求恢复，整体供需环境趋于宽松，促使LCD TV面板价格出现温和下行调整。32寸价格下降1美元，55寸下降2美元，65寸下降3美元。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT056",
+      "time": "unknown",
+      "subject": "LCD面板",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "CINNO Research研报指出，进入7月，国内618大促收官后终端品牌开启去库存周期，欧美旺季备货尚未启动，LCD TV面板短期需求走弱。头部面板厂预计持续高稼动生产，行业供需错配矛盾扩大，全尺寸面板价格同步小幅下调。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT057",
+      "time": "2026Q3",
+      "subject": "NAND Flash",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "2026年下半年NAND闪存涨价节奏逐步放缓，市场观望氛围持续升温，行业共识判断闪存价格已迈入高位平台期。三季度NAND单月涨幅回落至个位数区间，全年累计涨幅仍预计达25%-30%。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT058",
+      "time": "unknown",
+      "subject": "NAND Flash",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "一套32GB DDR5内存套装去年售价900元，现在已经涨到3800元，深圳华强北渠道商反馈价格翻了超四倍。美光、三星、SK海力士将超70%的先进产能转向高带宽存储，导致通用DRAM和NAND产能严重挤兑。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT059",
+      "time": "unknown",
+      "subject": "晶圆代工",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "力积电总经理朱宪国表示，自7月起存储代工报价上调45%。客户第三季度逻辑代工订单已达公司产能的1.4倍，供不应求的局面持续加剧。AI服务器正持续消耗全球内存产能，头部云厂商已提前锁定未来数年的DRAM供应。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT060",
+      "time": "unknown",
+      "subject": "晶圆代工",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "台积电通知英伟达、苹果、AMD等核心客户，计划将3nm、5nm及7nm制程价格上调5%-10%。三星电子针对4nm、5nm及部分车规8nm制程，将新客户供货价格提高约15%。AI订单爆发导致先进产能长期紧缺。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT061",
+      "time": "unknown",
+      "subject": "模拟芯片",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "德州仪器已明确计划自7月1日起上调电源管理IC等核心产品报价，这是该公司一年内第四次价格调整。此前德州仪器已于4月1日启动过一轮大规模涨价，电源管理IC等核心产品涨幅达15%-85%。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT062",
+      "time": "unknown",
+      "subject": "模拟芯片",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "7月1日，全球近20家模拟及功率半导体企业启动了年内第三轮涨价。AI服务器、数据中心专用电源管理芯片及高压信号链模拟芯片涨幅达15%至25%，工业自动化、储能隔离芯片涨幅为10%至15%。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT063",
+      "time": "unknown",
+      "subject": "连接器",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "莫仕、安费诺这两家连接器世界的双子星几乎同时宣布从7月1日起对所有新增订单执行新价格体系。全球三大连接器巨头泰科电子、安费诺、莫仕相继调价，涨幅集中在5%-30%，其中高压高速连接器涨幅最高。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT064",
+      "time": "unknown",
+      "subject": "连接器",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "一场从上游芯片、原材料到物流运输的全链路成本危机正将连接器行业推向变局拐点。海外主流芯片常规出货周期从过往3-4周拉长至7-8周甚至更久，AI服务器用高速背板连接器交期已拉长至30周以上。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT065",
+      "time": "2026",
+      "subject": "PCB",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "高端PCB价格已经远远超过三到四倍。AI服务器所用PCB的层数可达30层以上，高端产品达70到100层。2026年全球AI服务器出货量预计突破200万台，同比增长55%，直接拉动高端PCB的需求增长超110%。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT066",
+      "time": "2025Q3",
+      "subject": "PCB",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "建滔积层板7月6日发布涨价函，宣布FR-4覆铜板上调15%、PP半固化片上调15%。FR-4覆铜板价格从2025年7月均价70元/张一路飙升至2026年6月260元/张，一年涨幅超过270%。行业库存见底，无缓冲空间。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT067",
+      "time": "2026Q1",
+      "subject": "传感器",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "从2026年第一季度开始，全球半导体供应链的价格波动持续加剧，这轮涨价已明确传导至传感器板块，覆盖主流车规和工业级品类。意法半导体、Allegro等原厂先后发布正式调价通知，宣布从一季度起多款产品线工厂价上调10%-50%。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT068",
+      "time": "2026Q3",
+      "subject": "传感器",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "2026年7月，受全球车规芯片供应链紧张与高阶智驾功能包集体调价传导，驾驶员状态监测仪（DMS）市场价格普遍上涨8%-15%，成为智能驾驶硬件涨价潮中涨幅最集中的传感器模块之一。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描",
+      "price_change_pct": 8
+    },
+    {
+      "id": "EVT069",
+      "time": "2026",
+      "subject": "NOR Flash",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "2026年上半年NOR Flash合约价累计涨幅达100%-120%。由于供应商未有大规模扩产计划，预估下半年价格将继续调升。美光持续缩减NOR产能，全球供给高度集中于旺宏、华邦等厂商。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    },
+    {
+      "id": "EVT070",
+      "time": "unknown",
+      "subject": "NOR Flash",
+      "predicate": "价格波动",
+      "object": null,
+      "description": "聚辰股份发布涨价函：近期受全球半导体产业链波动影响，Nor Flash芯片核心原材料及晶圆、封测等生产环节成本持续攀升，导致公司整体生产成本上浮。公司决定对Nor flash全系列在现有价格基础上上调25%，自7月6日起执行。",
+      "confidence": "B",
+      "source": "WebSearch 自动扫描"
+    }
   ],
   "case_studies": [
     {
@@ -118,10 +1192,22 @@
       "root_cause": "韩厂主动关LCD产线转OLED，新产能空窗期",
       "catalyst": "台湾地震短期冲击产能",
       "amplifier": "渠道备货牛鞭效应",
-      "false_narratives": ["汇率贬值导致涨价", "原材料涨价是主因", "LCD长期紧缺"],
+      "false_narratives": [
+        "汇率贬值导致涨价",
+        "原材料涨价是主因",
+        "LCD长期紧缺"
+      ],
       "warning_template": [
-        {"signal": "韩厂宣布关LCD产线转OLED + 连续2季度无新线投产", "level": "红色", "prediction": "12个月内价格涨50%+，持续12-18个月"},
-        {"signal": "中国厂商10.5代线量产 + 价格连涨5季度", "level": "绿色", "prediction": "6个月内见顶，随后跌50%+"}
+        {
+          "signal": "韩厂宣布关LCD产线转OLED + 连续2季度无新线投产",
+          "level": "红色",
+          "prediction": "12个月内价格涨50%+，持续12-18个月"
+        },
+        {
+          "signal": "中国厂商10.5代线量产 + 价格连涨5季度",
+          "level": "绿色",
+          "prediction": "6个月内见顶，随后跌50%+"
+        }
       ]
     },
     {
@@ -139,11 +1225,27 @@
       "root_cause": "疫情需求预测错误，产能错配",
       "catalyst": "德州暴雪+瑞萨火灾+马来西亚封国连续黑天鹅",
       "amplifier": "全行业超量下单，牛鞭效应放大缺口3倍",
-      "false_narratives": ["华为制裁导致缺货", "缺芯持续3-5年", "美国卡脖子导致"],
+      "false_narratives": [
+        "华为制裁导致缺货",
+        "缺芯持续3-5年",
+        "美国卡脖子导致"
+      ],
       "warning_template": [
-        {"signal": "下游大客户砍单30%+ 3个月后需求V型复苏，产能已被占用", "level": "红色", "prediction": "6个月内交期拉长，价格涨100%+"},
-        {"signal": "连续2次5%+产能黑天鹅 + 交期>40周", "level": "橙色", "prediction": "缺货高峰持续3-6个月"},
-        {"signal": "消费电子需求连降2个月 + 渠道库存>3个月", "level": "绿色", "prediction": "3个月内缺货缓解，6个月内价格下跌"}
+        {
+          "signal": "下游大客户砍单30%+ 3个月后需求V型复苏，产能已被占用",
+          "level": "红色",
+          "prediction": "6个月内交期拉长，价格涨100%+"
+        },
+        {
+          "signal": "连续2次5%+产能黑天鹅 + 交期>40周",
+          "level": "橙色",
+          "prediction": "缺货高峰持续3-6个月"
+        },
+        {
+          "signal": "消费电子需求连降2个月 + 渠道库存>3个月",
+          "level": "绿色",
+          "prediction": "3个月内缺货缓解，6个月内价格下跌"
+        }
       ]
     },
     {
@@ -161,33 +1263,148 @@
       "root_cause": "原材料/能源/物流成本大幅上涨",
       "catalyst": "东南亚疫情导致产能扰动",
       "amplifier": "原厂连续发函涨价，渠道备货",
-      "false_narratives": ["国巨炒货涨3-5倍", "被动元件超级周期持续2年", "全品类缺货"],
+      "false_narratives": [
+        "国巨炒货涨3-5倍",
+        "被动元件超级周期持续2年",
+        "全品类缺货"
+      ],
       "warning_template": [
-        {"signal": "铜/铝箔/原材料连涨3个月 + 疫情产能扰动", "level": "红色", "prediction": "1-2个月内原厂发函涨价，常规料涨10%-30%"},
-        {"signal": "日厂交期>16周 + 台厂连涨2波以上", "level": "橙色", "prediction": "高容/车规料涨50%-100%"},
-        {"signal": "消费需求转弱 + 交期开始缩短", "level": "绿色", "prediction": "涨价结束，1-2季度内回落"}
+        {
+          "signal": "铜/铝箔/原材料连涨3个月 + 疫情产能扰动",
+          "level": "红色",
+          "prediction": "1-2个月内原厂发函涨价，常规料涨10%-30%"
+        },
+        {
+          "signal": "日厂交期>16周 + 台厂连涨2波以上",
+          "level": "橙色",
+          "prediction": "高容/车规料涨50%-100%"
+        },
+        {
+          "signal": "消费需求转弱 + 交期开始缩短",
+          "level": "绿色",
+          "prediction": "涨价结束，1-2季度内回落"
+        }
       ]
     }
   ],
   "causal_relations": [
-    {"id": "CAUS001", "from_event": "EVT001,EVT002", "from_time": "2015Q4-2016Q2", "to_event": "EVT004", "to_time": "2016Q3", "relation_type": "直接因果", "strength": "强", "time_order_valid": true, "description": "行业底部亏损+韩厂关产是面板涨价根因"},
-    {"id": "CAUS002", "from_event": "EVT003", "from_time": "2016Q2", "to_event": "EVT004", "to_time": "2016Q3", "relation_type": "触发/加速", "strength": "中", "time_order_valid": true, "description": "台湾地震短期冲击加速涨价启动"},
-    {"id": "CAUS003", "from_event": "EVT007", "from_time": "2018Q1", "to_event": "EVT008", "to_time": "2018Q3", "relation_type": "直接因果", "strength": "强", "time_order_valid": true, "description": "京东方新产能释放导致面板价格下跌"},
-    {"id": "CAUS004", "from_event": "EVT010,EVT011", "from_time": "2020Q1-Q2", "to_event": "EVT012", "to_time": "2020Q3", "relation_type": "直接因果", "strength": "强", "time_order_valid": true, "description": "疫情需求错配是MCU缺货根因"},
-    {"id": "CAUS005", "from_event": "EVT014,EVT015,EVT017", "from_time": "2021Q1-Q3", "to_event": "EVT016", "to_time": "2021Q2-Q4", "relation_type": "放大", "strength": "强", "time_order_valid": true, "description": "连续黑天鹅击穿安全库存，放大缺货程度"},
-    {"id": "CAUS006", "from_event": "EVT018", "from_time": "2022Q2", "to_event": "EVT019", "to_time": "2022Q4", "relation_type": "直接因果", "strength": "强", "time_order_valid": true, "description": "消费需求下滑导致MCU价格下跌"},
-    {"id": "CAUS007", "from_event": "EVT020", "from_time": "2020Q4", "to_event": "EVT022,EVT024,EVT025,EVT027,EVT028", "to_time": "2021Q2", "relation_type": "直接因果", "strength": "强", "time_order_valid": true, "description": "原材料成本上涨是2021被动元件涨价主因"},
-    {"id": "CAUS008", "from_event": "EVT021,EVT023,EVT026", "from_time": "2021Q1-Q2", "to_event": "EVT029", "to_time": "2021Q4", "relation_type": "放大", "strength": "中", "time_order_valid": true, "description": "疫情产能扰动拉长交期，放大涨价幅度"},
-    {"id": "CAUS009", "from_event": "EVT031,EVT032", "from_time": "2023-2025Q1", "to_event": "EVT033,EVT034,EVT035", "to_time": "2026Q1-Q2", "relation_type": "直接因果", "strength": "强", "time_order_valid": true, "description": "产能收缩+AI需求是第三轮涨价核心驱动"},
-    {"id": "CAUS010", "from_event": "EVT036,EVT037,EVT038,EVT039,EVT040,EVT041", "from_time": "各周期", "to_event": null, "to_time": null, "relation_type": "市场情绪/非因果", "strength": "弱", "time_order_valid": true, "description": "B/C级传言仅为同期市场情绪，不构成因果关系，不进入核心逻辑链"}
+    {
+      "id": "CAUS001",
+      "from_event": "EVT001,EVT002",
+      "from_time": "2015Q4-2016Q2",
+      "to_event": "EVT004",
+      "to_time": "2016Q3",
+      "relation_type": "直接因果",
+      "strength": "强",
+      "time_order_valid": true,
+      "description": "行业底部亏损+韩厂关产是面板涨价根因"
+    },
+    {
+      "id": "CAUS002",
+      "from_event": "EVT003",
+      "from_time": "2016Q2",
+      "to_event": "EVT004",
+      "to_time": "2016Q3",
+      "relation_type": "触发/加速",
+      "strength": "中",
+      "time_order_valid": true,
+      "description": "台湾地震短期冲击加速涨价启动"
+    },
+    {
+      "id": "CAUS003",
+      "from_event": "EVT007",
+      "from_time": "2018Q1",
+      "to_event": "EVT008",
+      "to_time": "2018Q3",
+      "relation_type": "直接因果",
+      "strength": "强",
+      "time_order_valid": true,
+      "description": "京东方新产能释放导致面板价格下跌"
+    },
+    {
+      "id": "CAUS004",
+      "from_event": "EVT010,EVT011",
+      "from_time": "2020Q1-Q2",
+      "to_event": "EVT012",
+      "to_time": "2020Q3",
+      "relation_type": "直接因果",
+      "strength": "强",
+      "time_order_valid": true,
+      "description": "疫情需求错配是MCU缺货根因"
+    },
+    {
+      "id": "CAUS005",
+      "from_event": "EVT014,EVT015,EVT017",
+      "from_time": "2021Q1-Q3",
+      "to_event": "EVT016",
+      "to_time": "2021Q2-Q4",
+      "relation_type": "放大",
+      "strength": "强",
+      "time_order_valid": true,
+      "description": "连续黑天鹅击穿安全库存，放大缺货程度"
+    },
+    {
+      "id": "CAUS006",
+      "from_event": "EVT018",
+      "from_time": "2022Q2",
+      "to_event": "EVT019",
+      "to_time": "2022Q4",
+      "relation_type": "直接因果",
+      "strength": "强",
+      "time_order_valid": true,
+      "description": "消费需求下滑导致MCU价格下跌"
+    },
+    {
+      "id": "CAUS007",
+      "from_event": "EVT020",
+      "from_time": "2020Q4",
+      "to_event": "EVT022,EVT024,EVT025,EVT027,EVT028",
+      "to_time": "2021Q2",
+      "relation_type": "直接因果",
+      "strength": "强",
+      "time_order_valid": true,
+      "description": "原材料成本上涨是2021被动元件涨价主因"
+    },
+    {
+      "id": "CAUS008",
+      "from_event": "EVT021,EVT023,EVT026",
+      "from_time": "2021Q1-Q2",
+      "to_event": "EVT029",
+      "to_time": "2021Q4",
+      "relation_type": "放大",
+      "strength": "中",
+      "time_order_valid": true,
+      "description": "疫情产能扰动拉长交期，放大涨价幅度"
+    },
+    {
+      "id": "CAUS009",
+      "from_event": "EVT031,EVT032",
+      "from_time": "2023-2025Q1",
+      "to_event": "EVT033,EVT034,EVT035",
+      "to_time": "2026Q1-Q2",
+      "relation_type": "直接因果",
+      "strength": "强",
+      "time_order_valid": true,
+      "description": "产能收缩+AI需求是第三轮涨价核心驱动"
+    },
+    {
+      "id": "CAUS010",
+      "from_event": "EVT036,EVT037,EVT038,EVT039,EVT040,EVT041",
+      "from_time": "各周期",
+      "to_event": null,
+      "to_time": null,
+      "relation_type": "市场情绪/非因果",
+      "strength": "弱",
+      "time_order_valid": true,
+      "description": "B/C级传言仅为同期市场情绪，不构成因果关系，不进入核心逻辑链"
+    }
   ],
   "validation_result": {
-    "total_events": 41,
-    "events_with_timestamp": 41,
-    "events_with_confidence": 41,
-    "events_with_price_data": 12,
+    "total_events": 70,
+    "events_with_timestamp": 51,
+    "events_with_confidence": 70,
     "a_level_events": 35,
-    "b_level_events": 3,
+    "b_level_events": 32,
     "c_level_events": 3,
     "total_case_studies": 3,
     "total_causal_relations": 10,
