@@ -1,0 +1,637 @@
+{
+  "total_new_events": 15,
+  "results": [
+    {
+      "event_id": "EVT042",
+      "category": "DRAM",
+      "cycle_type": "需求革命型上涨",
+      "has_red": true,
+      "has_orange": false,
+      "has_green": true,
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ],
+      "cause_analysis": {
+        "root_cause": [
+          "需求革命"
+        ],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    },
+    {
+      "event_id": "EVT043",
+      "category": "DRAM",
+      "cycle_type": "混合型上涨",
+      "has_red": false,
+      "has_orange": false,
+      "has_green": false,
+      "warning_template": [],
+      "cause_analysis": {
+        "root_cause": [],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    },
+    {
+      "event_id": "EVT044",
+      "category": "HBM",
+      "cycle_type": "需求革命型上涨",
+      "has_red": true,
+      "has_orange": false,
+      "has_green": true,
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ],
+      "cause_analysis": {
+        "root_cause": [
+          "需求革命"
+        ],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    },
+    {
+      "event_id": "EVT045",
+      "category": "MLCC",
+      "cycle_type": "需求革命型上涨",
+      "has_red": true,
+      "has_orange": false,
+      "has_green": true,
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ],
+      "cause_analysis": {
+        "root_cause": [
+          "需求革命"
+        ],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    },
+    {
+      "event_id": "EVT046",
+      "category": "MOSFET",
+      "cycle_type": "需求革命型上涨",
+      "has_red": true,
+      "has_orange": false,
+      "has_green": true,
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ],
+      "cause_analysis": {
+        "root_cause": [
+          "需求革命"
+        ],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    },
+    {
+      "event_id": "EVT047",
+      "category": "通用MCU",
+      "cycle_type": "需求革命型上涨",
+      "has_red": true,
+      "has_orange": false,
+      "has_green": true,
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ],
+      "cause_analysis": {
+        "root_cause": [
+          "需求革命"
+        ],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    },
+    {
+      "event_id": "EVT048",
+      "category": "电源管理IC",
+      "cycle_type": "需求革命型上涨",
+      "has_red": true,
+      "has_orange": false,
+      "has_green": true,
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ],
+      "cause_analysis": {
+        "root_cause": [
+          "需求革命"
+        ],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    },
+    {
+      "event_id": "EVT049",
+      "category": "NAND Flash",
+      "cycle_type": "混合型下跌",
+      "has_red": false,
+      "has_orange": false,
+      "has_green": false,
+      "warning_template": [],
+      "cause_analysis": {
+        "root_cause": [
+          "需求革命"
+        ],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "下跌"
+      }
+    },
+    {
+      "event_id": "EVT050",
+      "category": "PCB",
+      "cycle_type": "需求革命型上涨",
+      "has_red": true,
+      "has_orange": false,
+      "has_green": true,
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ],
+      "cause_analysis": {
+        "root_cause": [
+          "需求革命"
+        ],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    },
+    {
+      "event_id": "EVT051",
+      "category": "晶圆代工",
+      "cycle_type": "供给收缩型上涨",
+      "has_red": true,
+      "has_orange": false,
+      "has_green": true,
+      "warning_template": [
+        {
+          "signal": "头部厂商关产/转产 + 12个月无新产能 + 产能利用率<70%",
+          "level": "🔴红色预警",
+          "prediction": "12个月内涨价50%+，持续12-18个月"
+        },
+        {
+          "signal": "新产能大规模投放 + 价格连涨4季度 + 渠道库存>3个月",
+          "level": "🟢绿色预警",
+          "prediction": "6个月内见顶，随后下跌30%-70%"
+        }
+      ],
+      "cause_analysis": {
+        "root_cause": [
+          "产能收缩"
+        ],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    },
+    {
+      "event_id": "EVT052",
+      "category": "LCD面板",
+      "cycle_type": "混合型上涨",
+      "has_red": false,
+      "has_orange": false,
+      "has_green": false,
+      "warning_template": [],
+      "cause_analysis": {
+        "root_cause": [],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [
+          "备货"
+        ],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    },
+    {
+      "event_id": "EVT053",
+      "category": "片式电阻",
+      "cycle_type": "需求革命型上涨",
+      "has_red": true,
+      "has_orange": false,
+      "has_green": true,
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ],
+      "cause_analysis": {
+        "root_cause": [
+          "需求革命"
+        ],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    },
+    {
+      "event_id": "EVT054",
+      "category": "连接器",
+      "cycle_type": "成本推动型上涨",
+      "has_red": true,
+      "has_orange": true,
+      "has_green": true,
+      "warning_template": [
+        {
+          "signal": "原材料/能源/汇率连续涨价3个月 + 疫情/事故产能扰动",
+          "level": "🔴红色预警",
+          "prediction": "1-2个月原厂发函涨价10%-30%，持续2-4季度"
+        },
+        {
+          "signal": "日厂交期>16周 + 台厂连续发2波以上涨价函",
+          "level": "🟠橙色预警",
+          "prediction": "高容/车规等紧缺料号涨50%-100%"
+        },
+        {
+          "signal": "原材料价格回落 + 需求转弱 + 原厂交期缩短",
+          "level": "🟢绿色预警",
+          "prediction": "1-2季度价格回落"
+        }
+      ],
+      "cause_analysis": {
+        "root_cause": [
+          "成本推动"
+        ],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    },
+    {
+      "event_id": "EVT055",
+      "category": "封测",
+      "cycle_type": "需求革命型上涨",
+      "has_red": true,
+      "has_orange": false,
+      "has_green": true,
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ],
+      "cause_analysis": {
+        "root_cause": [
+          "需求革命"
+        ],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    },
+    {
+      "event_id": "EVT056",
+      "category": "DRAM",
+      "cycle_type": "混合型上涨",
+      "has_red": false,
+      "has_orange": false,
+      "has_green": false,
+      "warning_template": [],
+      "cause_analysis": {
+        "root_cause": [],
+        "downturn_cause": [],
+        "catalysts": [],
+        "amplifiers": [],
+        "false_narratives": [],
+        "cycle_direction": "上涨"
+      }
+    }
+  ],
+  "red_alerts": [
+    {
+      "category": "DRAM",
+      "cycle_type": "需求革命型上涨",
+      "event_id": "EVT042",
+      "description": "2026年7月美银报告：7月PC DRAM合约价月环比涨15%-20%，Q3涨幅恐达30%-40%，远超TrendForce预期的13%-18%。64GB服务器DRAM现货报价突破3100美元，较6月底合约价1380美元溢价146%，供需缺口大到无法通过正常管道弥补。三大原厂超70%先进产能转向HBM，消费级DRAM供给持续收缩。",
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ]
+    },
+    {
+      "category": "HBM",
+      "cycle_type": "需求革命型上涨",
+      "event_id": "EVT044",
+      "description": "2026年7月SK海力士Q2营收22万亿韩元，HBM3E 12层产品2026全年产能全部售罄，2027上半年意向订单超出现有产能两倍。三星×博通签署5年2000亿美元MOU，SK×英伟达超5000亿美元AI整体计划，HBM进入长期紧平衡时代。三大原厂HBM产能缺口仍高达50%-60%。",
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ]
+    },
+    {
+      "category": "MLCC",
+      "cycle_type": "需求革命型上涨",
+      "event_id": "EVT045",
+      "description": "2026年7月29日三星电机通知8月1日起MLCC全线涨价30%，太阳诱电7月23日发函9月1日起MLCC调价且无法保证交期。国巨7月1日起全系列电容涨约50%，为近年来调涨范围最大。村田7月起AI及车规MLCC再涨10%-40%为年内第三次调价。AI服务器单台MLCC用量3万颗以上，高端高容型号供不应求。",
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ]
+    },
+    {
+      "category": "MOSFET",
+      "cycle_type": "需求革命型上涨",
+      "event_id": "EVT046",
+      "description": "2026年7月英飞凌、TI、ST等约20家厂商7月1日起年内第二轮涨价，功率半导体进入涨价+缺货+配额三重共振的卖方市场。MOSFET交期拉长至30周以上，车规IGBT、AI服务器高压功率模块交期40-52周。AI服务器功耗为传统服务器3-5倍，8英寸成熟产能被快速消耗。英飞凌预计2026财年AI业务营收15亿欧元。",
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ]
+    },
+    {
+      "category": "通用MCU",
+      "cycle_type": "需求革命型上涨",
+      "event_id": "EVT047",
+      "description": "2026年7月ST两轮调价已全部生效，STM32F030/F103/F407交期24-52周，8位MCU现货极度紧缺。MCU产能被存储等高毛利产品挤压出现供不应求涨价，部分MCU厂商涨幅10%-15%。8英寸成熟制程产能被AI高价订单挤占，MCU面临竞价型缺货。",
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ]
+    },
+    {
+      "category": "电源管理IC",
+      "cycle_type": "需求革命型上涨",
+      "event_id": "EVT048",
+      "description": "2026年7月TI年内第四次调价电源管理IC，PMIC涨幅15%-85%。MPS、立锜7月调价电源管理芯片。8英寸成熟制程产能被AI芯片抢占，PMIC制造成本全面上行。AI服务器单机功耗从5-15千瓦跃升至30-100千瓦，仅AI服务器新增PMIC投片量将吃掉全球8英寸产能3%-4%。",
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ]
+    },
+    {
+      "category": "PCB",
+      "cycle_type": "需求革命型上涨",
+      "event_id": "EVT050",
+      "description": "2026年7月高速PCB价格涨超300%，头部厂商订单排到2027年。木林森子公司25天三次调价累计涨45%。建滔积层板7月6日涨价10%-15%。电子布7628规格从4.3元涨至8.4元翻倍，PP 1080型号断货。AI服务器PCB层数可达30-100层，单台价值量是普通服务器近10倍。",
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ]
+    },
+    {
+      "category": "晶圆代工",
+      "cycle_type": "供给收缩型上涨",
+      "event_id": "EVT051",
+      "description": "2026年7月8英寸成熟制程产能利用率攀升至85%-90%，部分晶圆厂调涨代工价5%-20%。台积电资本支出上调至600-640亿美元创历史新高。台积电通知客户5nm以下先进制程连续四年涨价3%-5%。TSMC规划减产8英寸产能推动成熟制程涨价。",
+      "warning_template": [
+        {
+          "signal": "头部厂商关产/转产 + 12个月无新产能 + 产能利用率<70%",
+          "level": "🔴红色预警",
+          "prediction": "12个月内涨价50%+，持续12-18个月"
+        },
+        {
+          "signal": "新产能大规模投放 + 价格连涨4季度 + 渠道库存>3个月",
+          "level": "🟢绿色预警",
+          "prediction": "6个月内见顶，随后下跌30%-70%"
+        }
+      ]
+    },
+    {
+      "category": "片式电阻",
+      "cycle_type": "需求革命型上涨",
+      "event_id": "EVT053",
+      "description": "2026年7月被动元件第三轮涨价潮：国巨7月1日全系列电容涨约50%，村田AI及车规MLCC涨10%-40%为年内第三次，三星电机8月1日MLCC涨30%。电感磁珠全线紧缺，Coilank暂停磁珠叠层电感新订单。银浆等贵金属成本暴涨30%-140%倒逼涨价，AI服务器需求抢产能。",
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ]
+    },
+    {
+      "category": "连接器",
+      "cycle_type": "成本推动型上涨",
+      "event_id": "EVT054",
+      "description": "2026年7月安费诺启动年内第二轮涨价5%-15%，覆盖汽车、通信、工业及数据中心全品类。TE、Molex跟进信号。铜价破11000美元/吨，金、银等贵金属及LCP同步涨价。800V高压平台和224G高速连接器订单激增，巨头高端产能饱和。",
+      "warning_template": [
+        {
+          "signal": "原材料/能源/汇率连续涨价3个月 + 疫情/事故产能扰动",
+          "level": "🔴红色预警",
+          "prediction": "1-2个月原厂发函涨价10%-30%，持续2-4季度"
+        },
+        {
+          "signal": "日厂交期>16周 + 台厂连续发2波以上涨价函",
+          "level": "🟠橙色预警",
+          "prediction": "高容/车规等紧缺料号涨50%-100%"
+        },
+        {
+          "signal": "原材料价格回落 + 需求转弱 + 原厂交期缩短",
+          "level": "🟢绿色预警",
+          "prediction": "1-2季度价格回落"
+        }
+      ]
+    },
+    {
+      "category": "封测",
+      "cycle_type": "需求革命型上涨",
+      "event_id": "EVT055",
+      "description": "2026年7月日月光再度调涨先进封装报价最高涨20%+。封测成本涨幅接近30%。先进封装与HBM产能紧缺成为行业瓶颈，TCB设备交付周期长达12-18个月，产能扩张速度显著滞后于需求。2026年底HBM供需缺口仍达10%。",
+      "warning_template": [
+        {
+          "signal": "新需求爆发（AI/新能源车）+ 行业前期产能收缩20%+",
+          "level": "🔴红色预警",
+          "prediction": "相关料号结构性涨价50%-200%，消费类无涨价"
+        },
+        {
+          "signal": "新产能大规模建设 + 新需求渗透率超过30%",
+          "level": "🟢绿色预警",
+          "prediction": "12-18个月后供需缓解，价格平稳"
+        }
+      ]
+    }
+  ],
+  "orange_count": 1,
+  "green_count": 11,
+  "validation": {
+    "validation_time": "2026-08-01T12:14:15.833933",
+    "total_relations": 10,
+    "valid_relations": 9,
+    "invalid_relations": 1,
+    "invalid_details": [
+      {
+        "relation_id": "CAUS005",
+        "description": "连续黑天鹅击穿安全库存，放大缺货程度",
+        "from_time": 8087,
+        "to_time": 8086,
+        "error": "原因发生时间晚于结果，违反时间因果铁则"
+      }
+    ],
+    "validation_passed": false
+  },
+  "scan_time": "2026-08-01 12:14:15",
+  "query_count": 12
+}
