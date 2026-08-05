@@ -74,6 +74,8 @@ class ComponentCycleAnalyzer:
     
     def _parse_category(self, obj: str) -> str:
         """解析品类"""
+        if not obj:
+            return '全品类'
         category_map = {
             'E021': 'LCD面板',
             'E022': 'DRAM存储',
@@ -250,7 +252,7 @@ class ComponentCycleAnalyzer:
                 "features": ["头部厂商产能调整", "中低端产能退出", "需求稳定增长", "渠道囤货"],
                 "duration": "15个月上涨",
                 "price_range": "200%-500%",
-                "key_lesson": "不要相信"游资炒作"传言，核心是供给收缩"
+                "key_lesson": "不要相信'游资炒作'传言，核心是供给收缩"
             },
             {
                 "case_id": "C002",
