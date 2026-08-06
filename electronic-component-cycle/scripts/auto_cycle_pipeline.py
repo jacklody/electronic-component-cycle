@@ -270,7 +270,7 @@ class AutoKnowledgeGraphUpdater:
         with open(kg_path, 'r', encoding='utf-8') as f:
             self.kg = json.load(f)
         self.next_event_id = self._get_next_id("EVT")
-        self.next_case_id = self._get_next_id("CASE", prefix="CASE")
+        self.next_case_id = self._get_next_id("CASE", case_prefix=True)
         self.next_caus_id = self._get_next_id("CAUS")
     
     def _get_next_id(self, prefix: str, case_prefix: bool = False) -> int:
