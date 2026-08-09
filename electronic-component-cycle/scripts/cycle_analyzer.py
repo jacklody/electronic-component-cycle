@@ -87,7 +87,7 @@ class ComponentCycleAnalyzer:
             'E030': '片阻',
         }
         for k, v in category_map.items():
-            if k in obj:
+            if obj and k in obj:
                 return v
         return '全品类'
     
@@ -250,7 +250,7 @@ class ComponentCycleAnalyzer:
                 "features": ["头部厂商产能调整", "中低端产能退出", "需求稳定增长", "渠道囤货"],
                 "duration": "15个月上涨",
                 "price_range": "200%-500%",
-                "key_lesson": "不要相信"游资炒作"传言，核心是供给收缩"
+                "key_lesson": "不要相信'游资炒作'传言，核心是供给收缩"
             },
             {
                 "case_id": "C002",
